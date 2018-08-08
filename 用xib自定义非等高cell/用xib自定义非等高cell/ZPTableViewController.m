@@ -87,6 +87,7 @@
     return cell;
 }
 
+#pragma mark ————— UITableViewDelegate —————
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     NSLog(@"heightForRowAtIndexPath");
@@ -95,7 +96,6 @@
     return [[self.heightMutDic objectForKey:[NSString stringWithFormat:@"%ld", (long)indexPath.row]] floatValue];
 }
 
-#pragma mark ————— UITableViewDelegate —————
 /**
  此方法的作用是设置cell的估计高度。如果代码中没有写这个方法的话则系统会先调用heightForRowAtIndexPath方法，再调用cellForRowAtIndexPath方法。如果写了此方法的话则系统会先调用这个方法，然后调用cellForRowAtIndexPath方法，最后调用heightForRowAtIndexPath方法，从而优化了性能。
  */
