@@ -13,4 +13,4 @@
  
  3、用代码的方式自定义非等高cell。
  
- 此Demo介绍了如何在UITableViewController中利用xib文件的方式创建自定义非等高的cell。在代码中用把cell的高度存放在可变字典的方式来确定每个cell的具体高度。
+此Demo介绍了如何在UITableViewController中利用xib文件的方式创建自定义非等高的cell。此Demo在代码中用把cell的高度存放在可变字典的方式来确定每个cell的具体高度。
