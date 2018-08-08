@@ -1,0 +1,2 @@
+# ZPUnequalHeightCustomizedCell_UITableViewController_xib_1
+介绍在UITableViewController中如何利用xib文件创建非等高的cell。
